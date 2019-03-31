@@ -50,16 +50,51 @@
 									
 									<h2>Project Idea</h2>
 										<p><strong>Overview</strong></p>
-											<p> </p>
+											<p>This project will be an Arduino based shower usage monitoring device that tracks how long a person has been in the shower and then shuts off the hot water after a predefined period of time. The Arduino will also have the capacity to send information to a central system that informs the user how much water they have been using whilst showering, as well as how much they have saved in comparison to the average shower. The user can either choose to install a separate, small screen that displays the information, or download a smartphone app to do the same.</p>
+										
 										<p><strong>Motivation</strong></p>
-											<p> </p>
+											<p>According to the daily telegraph, the average shower ranges from 7 minutes to 15 - depending on the gender of the person and the content of their showers. Home-water-works.org states that the average showerhead uses 7.9 litres per minute. That means, for an average 8-minute shower, that person is using roughly 64 litres of water. If there were to be a simple to install, foolproof method to limit the length of a person's showers, the environment (and water bills across the nation) would benefit greatly. As such, this is what motivates me towards projects such as this, what I find passion in; fun, small projects, that are capable of having a positive impact on the environment and the person who utilises them.</p>
+										<!-- Main description segment -->
+										
 										<p><strong>Description</strong></p>
-											<p> </p>
+											<p>The brain of the product will be an Arduino, connected to a reasonably large reserve battery, and then plugged into a wall socket. In order to activate the shower monitor, there will be a button attached to the outside of an air/water-tight container that the Arduino, battery, buzzer, and wires will sit in. Also, on the outside of the box will be an on/off switch, this is in case the programming inside the Arduino goes loopy and needs to be reset. The shower monitor will also feature a master-override key, allowing the user to increase the time of their shower in cases of necessity - in cases of families it would be wise to keep this out of reach of younger children.</p>
+											<p>In order to alert the user of the approaching time limit of their shower, there will also be a loud (or quiet, depending on user preference) beeper or buzzer that goes off twice when there is two minutes left of their shower, once when there is one-minute left, and then counts down the last ten seconds in short beeps. In place of the buzzer, it would also be
+												possible to install LED lights that flash at the designated times instead, for a more pleasant showering experience. </p>
+											<p>Unless the user opts to simply use the shower monitor as a timer rather than an intervention method, the shower monitor will also be connected via wire (or possibly wi-fi/Bluetooth if wireless solenoids exist at a reasonable price) to an electronic hot-water solenoid. The solenoid, unless activated by the Arduino, will naturally be in the “off” position,
+												meaning that should a user attempt to turn on the hot water to their shower without activating the shower monitor, only cold water will come out. Similarly, once the timer runs out, the solenoid will shut off, giving the user a few seconds to turn off the shower before they are shocked by cold water.</p>
+											<p>The box will be small, easily concealed and airtight. While it may seem silly to have an airtight container when the box won’t actually be in the shower, steam can steal permeate through non-airtight boxes and damage the electronic components inside, potentially trapping the user in cold showers until the parts are replaced. The reserve battery exists
+												in case of power failure to the house. If it were just connected to a power socket, when there are power outages a person would not be able to use their shower. </p>
+											<p>If the user so desires, it would also be possible to fit their pipeline with an electronic water flow meter, making it possible to communicate to the Arduino how much water has flown through the pipe in ‘x’ amount of time. The Arduino could then relay this information over a wi-fi or Bluetooth network to a central server or the person’s phone directly, allowing them to check how much water had actually been used by their shower, in what period of
+												time, and then by extension, how much other machines are contributing to the water bill. This would also allow us to create a function in the app where the user can see how much water they have saved by using the water monitor, in comparison to similar households.</p>
+										
 										<p><strong>Tools and technologies</strong></p>
-											<p> </p>
+											<p>The software that an Arduino uses is called Processing, a simple hardware programming language. For a person to write to an Arduino, they only need the Arduino IDE, and a way to connect the Arduino to their computer. Necessary hardware is as follows: </p>
+											
+											<ul>
+											
+											<li>Electronically controlled hot water solenoid</li>
+											<li>Arduino</li>
+											<li>Wires</li>
+											<li>Soldering iron</li>
+											<li>Solder</li>
+											<li>Button (electronic)</li>
+											<li>Electronic lock/key</li>
+											<li>LED’s</li>
+											<li>Buzzer or similar</li>
+											<li>Air/water-tight container. </li>
+											<li>Reserve battery of some description</li>
+											<li>Water flow monitor</li>
+											<li>Arduino wifi shield (if using app/water flow monitor)</li>
+											<li>Dual position switch</li>
+											<li>Drill /li>
+											
+											</ul>
+										
 										<p><strong>Skills required</strong></p>
-											<p> </p>
+											<p>In order to build this project, the average person needs to understand how to solder connections to their Arduino, use the Arduino IDE, and also how to install a solenoid in their home. However, due to the fact that it is illegal to do your own plumbing without a license in Victoria, I cannot condone installing the solenoid yourself, unless, of course, you are a licensed plumber. The person must also understand the basics of wiring. I can already do these things (except the plumbing), however they are easy to learn through online tutorials. There are many resources on the internet for programming Processing, and also lots of information on how to solder as well. With some reading a person would easily be able to complete this project within a few days.</p>
+											<p>Special hardware required would be drills and soldering irons, and the actual solenoid, however they are easy to borrow and also there are inexpensive options available to buy also. The solenoid is easy to buy online or from a plumbing store in Melbourne.</p>
 										<p><strong>Outcome</strong></p>
+											<p>If this project is successful, it would assist people in reducing their water usage in a fun, hands-on way. This would have a positive impact on the environment as more people are using less water for unnecessary reasons. It would also help to reduce water bills and inform people on how much water they are using. The original problem of spending too long in the shower would be solved, as it would become impossible to actually spend longer than the designated time period in the shower. I think that if people were to decide to use things like this it would have a positive impact on our environment, and that’s the kind of area that I think IT innovation should take off in. </p>
 											
 					</div>
 			</section>
